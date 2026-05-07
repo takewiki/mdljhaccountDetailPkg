@@ -16,7 +16,9 @@
 accountDetail_select<- function(erp_token,FStatrDate,FEndDate) {
 
   sql=paste0("
-exec rds_proc_accountDetail_view '",FStatrDate,"','",FEndDate,"' ")
+
+exec rds_proc_accountDetail_view '",FStatrDate,"','",FEndDate,"'
+             ")
 
   res=tsda::sql_select2(token = erp_token,sql = sql)
   return(res)
