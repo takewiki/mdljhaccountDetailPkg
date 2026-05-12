@@ -1,5 +1,5 @@
 
-#' 查询accountDetail
+#' 查询accountDetail银行流水
 #'
 #' @param token
 
@@ -15,8 +15,8 @@
 #' accountDetail_select()
 accountDetail_select<- function(erp_token,FStatrDate,FEndDate) {
 
-  sql=paste0("
 
+  sql=paste0("
 exec rds_proc_accountDetail_view '",FStatrDate,"','",FEndDate,"'
              ")
 

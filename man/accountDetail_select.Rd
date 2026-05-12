@@ -2,7 +2,7 @@
 % Please edit documentation in R/accountDetail.R
 \name{accountDetail_select}
 \alias{accountDetail_select}
-\title{查询accountDetail}
+\title{查询accountDetail银行流水}
 \usage{
 accountDetail_select(erp_token, FStatrDate, FEndDate)
 }
@@ -15,7 +15,7 @@ accountDetail_select(erp_token, FStatrDate, FEndDate)
 无返回值
 }
 \description{
-查询accountDetail
+查询accountDetail银行流水
 }
 \examples{
 accountDetail_select()
